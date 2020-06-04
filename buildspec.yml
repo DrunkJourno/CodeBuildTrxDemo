@@ -12,7 +12,7 @@ phases:
 reports:
     WeatherForecastTests:
         files:
-            - 'TestResults.trx'
+            - '**/*'
         base-directory: './Tests/TestResults'
         discard-paths: no #do not remove file paths from test result files
         file-format: VisualStudioTrx
