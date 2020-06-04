@@ -22,6 +22,7 @@ namespace TestApi
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         public WeatherForecast(int days, int temp){
             Date = DateTime.Now;
             TemperatureC = SetTemperature(temp);
@@ -36,6 +37,10 @@ namespace TestApi
         public string GetSummary(int temp){
             if(temp >= 40){
 >>>>>>> Initial creation of WeatherForecast Project
+=======
+        public string GetSummary(int temp){
+            if(temp >= 40){
+>>>>>>> c8122a3de0db456a9348f015441d2caa55f6ae7a
                 return "Sweltering";
             }else if(temp < 40 && temp >= 30){
                 return "Hot";
@@ -52,11 +57,14 @@ namespace TestApi
             }else return "Record temperature!";
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         private int SetTemperature(int temp){
             return temp;
         }
 =======
 >>>>>>> Initial creation of WeatherForecast Project
+=======
+>>>>>>> c8122a3de0db456a9348f015441d2caa55f6ae7a
     }
 }
