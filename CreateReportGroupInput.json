@@ -1,0 +1,12 @@
+{
+    "name": "WeatherForecastTests", 
+    "type": "TEST", 
+    "exportConfig": {
+        "exportConfigType": "S3", 
+        "s3Destination": {
+            "bucket": "hello-world-tests", 
+            "path": "TestResults", 
+            "packaging": "NONE"
+        }
+    }
+}
