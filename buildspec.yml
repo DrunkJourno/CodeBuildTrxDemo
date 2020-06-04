@@ -13,7 +13,6 @@ reports:
     arn:aws:kms:us-east-2:958862843347:alias/aws/s3:
         files:
             - '**/*'
-        base-directory:
-            - './testresults'
+        base-directory: './testresults'
         discard-paths: no #do not remove file paths from test result files
         file-format: VisualStudioTrx
