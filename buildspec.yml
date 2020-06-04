@@ -8,3 +8,11 @@ phases:
         commands:
             - echo Running tests 
             - dotnet test --logger "trx;LogFileName=TestResults.trx" --results-directory ./testresults
+        
+reports:
+    WeatherForecastTests:
+        files:
+            - '**/*'
+        base-directory: './TestResults'
+        discard-paths: no #do not remove file paths from test result files
+        file-format: VisualStudioTrx
