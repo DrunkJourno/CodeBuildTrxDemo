@@ -21,8 +21,16 @@ namespace TestApi
             Summary = GetSummary(TemperatureC);
         }
 
-        public string GetSummary(int temp){
-            if(temp >= 40){
+        public WeatherForecast(int days, int temp){
+            Date = DateTime.Now;
+            TemperatureC = SetTemperature(temp);
+            Summary = GetSummary(TemperatureC);
+        }
+
+        public string GetSummary(int? temp){
+            if(temp == null){
+                return "No temperature recorded";
+            }else if(temp >= 40){
                 return "Sweltering";
             }else if(temp < 40 && temp >= 30){
                 return "Hot";
@@ -37,6 +45,10 @@ namespace TestApi
             }else if(temp < -10 && temp >= -20){
                 return "Freezing";
             }else return "Record temperature!";
+        }
+
+        private int SetTemperature(int temp){
+            return temp;
         }
     }
 }
