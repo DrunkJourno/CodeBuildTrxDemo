@@ -15,4 +15,5 @@ reports:
         - '**/*'
     base-directory:
         - './testresults'
-    discard-paths: false #do not remove file paths from test result files
+    discard-paths: 
+        - false #do not remove file paths from test result files
