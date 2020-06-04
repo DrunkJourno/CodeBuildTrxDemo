@@ -15,5 +15,5 @@ reports:
         - '**/*'
     base-directory:
         - './testresults'
-    discard-paths: 
-        - false #do not remove file paths from test result files
+    discard-paths: no #do not remove file paths from test result files
+    file-format: VisualStudioTrx
