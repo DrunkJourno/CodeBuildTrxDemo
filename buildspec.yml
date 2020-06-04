@@ -10,7 +10,7 @@ phases:
             - dotnet test --logger "trx;LogFileName=TestResults.trx" --results-directory ./testresults
         
 reports:
-    report-name-or-arn: arn:aws:kms:us-east-2:958862843347:alias/aws/s3
+    arn:aws:kms:us-east-2:958862843347:alias/aws/s3:
     files:
         - '**/*'
     base-directory: './testresults'
