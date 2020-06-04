@@ -38,7 +38,7 @@ namespace Tests
             Assert.Equal(summary, weatherForecast.Summary);
         }
 
-        [Fact(Skip = "For Demo")]
+        [Fact]
         public void FailTest()
         {
             WeatherForecast weatherForecast = new WeatherForecast(0, 40) { };
